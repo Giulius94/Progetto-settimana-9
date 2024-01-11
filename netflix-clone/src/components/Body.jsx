@@ -31,17 +31,6 @@ export default class Body extends Component {
               >
                 Genres &nbsp;
               </button>
-              <div className="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
-                <a className="dropdown-item text-white bg-dark" href="#">
-                  Comedy
-                </a>
-                <a className="dropdown-item text-white bg-dark" href="#">
-                  Drama
-                </a>
-                <a className="dropdown-item text-white bg-dark" href="#">
-                  Thriller
-                </a>
-              </div>
             </div>
           </div>
           <div>

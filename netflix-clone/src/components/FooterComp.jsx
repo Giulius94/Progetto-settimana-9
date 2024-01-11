@@ -1,4 +1,5 @@
 import React from 'react'
+import { Facebook, Instagram, Twitter, Youtube} from 'react-bootstrap-icons';
 
 export default function FooterComp() {
   return (
@@ -6,11 +7,11 @@ export default function FooterComp() {
     <div className="row text-center mt-5">
       <div className="col-6 offset-3">
         <div className="row">
-          <div className="col col-12 text-left mb-2">
-            <i className="fa fa-facebook footer-icon"></i>
-            <i className="fa fa-instagram footer-icon"></i>
-            <i className="fa fa-twitter footer-icon"></i>
-            <i className="fa fa-youtube footer-icon"></i>
+          <div className="col col-12 text-left mb-2 d-flex">
+          <Facebook />
+            <Instagram className='ms-4'/>
+            <Twitter className='ms-4'/>
+            <Youtube className='ms-4'/>
           </div>
         </div>
         <div
