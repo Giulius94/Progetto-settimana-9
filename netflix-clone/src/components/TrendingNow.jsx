@@ -4,7 +4,7 @@ import { urlApi } from '../data/data';
 export default class TrendingNow extends Component {
 
     state = { 
-        objTrending : [],
+        objTrending : []
     }
     
     componentDidMount() {
@@ -25,17 +25,14 @@ export default class TrendingNow extends Component {
                   objTrending: [...prevState.objTrending, responseJson],
                 }));
               }
-      
-              console.log(this.state);
             })
             .catch((error) => {
               console.log(error);
             });
         });
-      }
+      } 
       
     render() {
-        console.log(this.state)
         return (
             this.state.objTrending.map((e, index) => (
               <div key={index} className="col mb-2 px-1">

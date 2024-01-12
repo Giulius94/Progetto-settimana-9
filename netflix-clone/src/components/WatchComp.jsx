@@ -25,8 +25,7 @@ export default class TrendingNow extends Component {
                   objWatch: [...prevState.objWatch, responseJson],
                 }));
               }
-      
-              console.log(this.state);
+       
             })
             .catch((error) => {
               console.log(error);
@@ -35,7 +34,6 @@ export default class TrendingNow extends Component {
       }
       
     render() {
-        console.log(this.state)
         return (
             this.state.objWatch.map((e, index) => (
               <div key={index} className="col mb-2 px-1">
